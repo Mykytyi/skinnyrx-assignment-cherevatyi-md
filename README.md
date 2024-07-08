@@ -6,7 +6,7 @@
 
 ## Local development
 
-Run the service by commands:
+Run the application by commands:
 
     npm install
     npm run start
