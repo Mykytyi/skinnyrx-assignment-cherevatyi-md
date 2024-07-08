@@ -7,7 +7,6 @@ interface UserState {
   notes: string
 }
 
-// Define the initial state using that type
 const initialState: UserState = {
   option: '',
   notes: ''
@@ -15,7 +14,6 @@ const initialState: UserState = {
 
 export const userFormSlice = createSlice({
   name: 'userForm',
-  // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
     setOption: (state, action: PayloadAction<string>) => {
@@ -28,8 +26,5 @@ export const userFormSlice = createSlice({
 });
 
 export const { setOption, setNotes } = userFormSlice.actions;
-
-// Other code such as selectors can use the imported `RootState` type
-export const selectOption = (state: RootState) => state.userForm.option;
 
 export default userFormSlice.reducer;

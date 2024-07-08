@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import { setOption } from '../../redux/slices/user';
+import { setOption } from '../../redux/slices/userForm';
 
 const RadioGroup = () => {
   const value = useAppSelector(state => state.userForm.option);

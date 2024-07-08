@@ -1,6 +1,6 @@
 import { ChangeEvent } from 'react';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import { setNotes } from '../../redux/slices/user';
+import { setNotes } from '../../redux/slices/userForm';
 
 
 const NotesBlock = () => {
